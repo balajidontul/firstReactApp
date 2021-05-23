@@ -1,1 +1,1 @@
-# First React App
+# Expense Tracker - First React App
