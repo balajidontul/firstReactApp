@@ -1,14 +1,14 @@
 import "./ExpenseItem.css";
-function expenceItem() {
+function expenseItem(props) {
   return (
     <div className="expense-item">
-      <div>28 March 2021</div>
+      <div>{props.date.toISOString()}</div>
       <div className="expense-item__description">
-        <h2>Car Insurance</h2>
-        <div className="expense-item__price">$234.94</div>
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">{props.amount}</div>
       </div>
     </div>
   );
 }
 
-export default expenceItem;
+export default expenseItem;
